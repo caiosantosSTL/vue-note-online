@@ -5,14 +5,16 @@ import NoteVue from "./components/Note.vue";
 <template>
   <div class="nav">
     <div>
-      <h1>Note Online</h1>
+      <h1>My fast Note</h1>
       
     </div>
   </div>
   <div class="container">
     <NoteVue />
   </div>
-  <div class="footer">foot</div>
+  <div class="footer">
+    <p>This project was created with 💛 using Vue3</p>
+  </div>
 </template>
 
 <style>
@@ -36,6 +38,11 @@ import NoteVue from "./components/Note.vue";
   background-color: black;
   height: 100px;
   margin-top: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .container {
