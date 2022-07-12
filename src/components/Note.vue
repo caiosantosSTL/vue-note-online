@@ -43,5 +43,6 @@ function outFile() {
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
+  color: white;
 }
 </style>

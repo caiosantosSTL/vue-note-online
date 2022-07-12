@@ -36,7 +36,6 @@ import NoteVue from "./components/Note.vue";
   background-color: black;
   height: 100px;
   margin-top: 20px;
-  color: aliceblue;
 }
 
 .container {
