@@ -14,7 +14,7 @@ function outFile() {
   <div class="tab">
     <div @click="outFile()" class="btn">save text</div>
   </div>
-  <textarea name="" id="txtarea" cols="30" rows="10"></textarea>
+  <textarea name="" id="txtarea" cols="30" rows="10" maxlength="500"></textarea>
 </template>
 
 <style scoped>
