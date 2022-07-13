@@ -38,7 +38,7 @@ function outFile() {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  background-color: rgb(95, 213, 56);
+  background-color: rgb(74, 166, 43);
   height: auto;
   border-radius: 10px;
   padding: 10px;
