@@ -5,7 +5,7 @@ import NoteVue from "./components/Note.vue";
 <template>
   <div class="nav">
     <div>
-      <h1>My fast Note</h1>
+      <h1>My fast Note 📒</h1>
       
     </div>
   </div>
