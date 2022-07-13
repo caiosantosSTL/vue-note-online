@@ -14,7 +14,7 @@ function outFile() {
   <div class="tab">
     <div @click="outFile()" class="btn">save text</div>
   </div>
-  <textarea name="" id="txtarea" cols="30" rows="10" maxlength="1000" placeholder="Write here"></textarea>
+  <textarea name="" id="txtarea" cols="30" rows="10" maxlength="1500" placeholder="Write here"></textarea>
 </template>
 
 <style scoped>
@@ -38,7 +38,7 @@ function outFile() {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  background-color: rgb(176, 84, 84);
+  background-color: rgb(95, 213, 56);
   height: auto;
   border-radius: 10px;
   padding: 10px;
