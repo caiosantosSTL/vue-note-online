@@ -1,5 +1,6 @@
 <script setup>
 import fsx from "file-saver";
+import { ref } from "vue";
 function outFile() {
   const txt = document.querySelector("#txtarea").value;
 
@@ -7,14 +8,31 @@ function outFile() {
   fsx.saveAs(blob, "out.txt");
 
   console.log(txt);
+
 }
+
+  const valueTextArea =  ref('') 
+
 </script>
 
 <template>
   <div class="tab">
-    <div @click="outFile()" class="btn">save text</div>
+    <div v-if="valueTextArea === ''">
+      <p>Write something to save it</p>
+    </div>
+    <div v-else>
+      <div @click="outFile()" class="btn">save text</div>
+    </div>
   </div>
-  <textarea name="" id="txtarea" cols="30" rows="10" maxlength="1500" placeholder="Write here"></textarea>
+  <textarea
+    name=""
+    id="txtarea"
+    cols="30"
+    rows="10"
+    maxlength="1500"
+    placeholder="Write here"
+    v-model="valueTextArea"
+  ></textarea>
 </template>
 
 <style scoped>
@@ -30,8 +48,12 @@ function outFile() {
 }
 
 .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: auto;
   margin: 10px;
+  height: 80px;
 }
 .btn {
   display: flex;
@@ -46,9 +68,8 @@ function outFile() {
   color: white;
   transition-delay: 100ms;
 }
-.btn:hover{
+.btn:hover {
   background-color: rgb(38, 87, 22);
   transform: translateY(-5px);
-  
 }
 </style>

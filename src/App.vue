@@ -28,14 +28,14 @@ import NoteVue from "./components/Note.vue";
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(14, 14, 14);
   height: 150px;
   margin-bottom: 20px;
   color: rgb(255, 255, 255);
 }
 
 .footer {
-  background-color: black;
+  background-color: rgb(14, 14, 14);
   height: 100px;
   margin-top: 20px;
   color: white;
